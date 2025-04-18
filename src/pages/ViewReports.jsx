@@ -23,7 +23,7 @@ function ReportCard({ report }) {
                 className="image-preview"
             />
           )}
-          
+          git p
         </div>
       );
     }
