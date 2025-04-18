@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Sidebar from './components/sidebar';
 import './App.css';
 
@@ -10,6 +11,7 @@ import ViewReports from './pages/ViewReports'
 
 
 function App() {
+  const [reports, setReports] = useState([]);
   return (
     <div className = "app-container">
       <Sidebar />
@@ -17,8 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/submit" element={<SubmitReport />} />
-          <Route path="/reports" element={<ViewReports />} />
+          <Route path="/submit" element={<SubmitReport reports={reports} setReports={setReports} />} />
+          <Route path="/reports" element={<ViewReports reports={reports} />} />
         </Routes>
       </div>
     </div>

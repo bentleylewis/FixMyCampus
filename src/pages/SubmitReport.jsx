@@ -1,7 +1,7 @@
 
 import { useState, useRef } from 'react';
 
-function SubmitReport() {
+function SubmitReport( { reports, setReports}) {
     const [description, setDescription] = useState('');
     const [classification, setClassification] = useState('');
     const [imageFile, setImageFile] = useState(null);
@@ -9,10 +9,19 @@ function SubmitReport() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        if (description === "" || classification === "") {
+        if (description === "" || classification === "" || imageFile === null) {
             alert("Please complete all fields!");
             return;
         }
+
+        const newReport = {
+            description: description,
+            classification: classification,
+            image: imageFile,
+            timestamp: new Date().toLocaleString(),
+        }
+
+        setReports([...reports, newReport]);
 
         setDescription('');
         setClassification('');
