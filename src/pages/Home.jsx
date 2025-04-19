@@ -1,10 +1,15 @@
 function Home() {
     return (
-        <div>
-            <h1>Welcome to FixMyCampus</h1>
-            <p>This website helps student and the community alike report issues found on campus!</p>
-        </div>
+      <div className="report-box">
+        <h2>Welcome to FixMyCampus</h2>
+        <p>
+          FixMyCampus is your go-to platform for reporting campus maintenance issues like potholes, broken benches, busted lights, and more. 
+          Just head to the Submit Report page, provide a quick description, and help make Oklahoma State University a safer, cleaner place for everyone. 
+          Your voice makes a difference!
+        </p>
+      </div>
     );
-}
-
-export default Home;
+  }
+  
+  export default Home;
+  

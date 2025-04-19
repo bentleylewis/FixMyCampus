@@ -1,0 +1,30 @@
+.report-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff4e6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .report-card {
+    border-bottom: 1px solid #ffa94d;
+    padding: 1rem 0;
+    text-align: left;
+  }
+  
+  .report-card h3 {
+    color: #e85d04;
+    margin-bottom: 0.5rem;
+  }
+  
+  .report-card p {
+    margin: 0.25rem 0;
+  }
+  
+  .image-preview {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
