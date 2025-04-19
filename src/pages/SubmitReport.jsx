@@ -30,15 +30,15 @@ function SubmitReport( { reports, setReports}) {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <h1> Found something wrong with Campus?</h1>
+            <h1> Found something wrong with Campus? Report it here!</h1>
             <select
             value = {classification}
             onChange = { (e) => setClassification(e.target.value)}
             >
             <option value="" disabled>Select a classification</option>
             <option value="trash">Trash</option>
-            <option value="pothole">pothole</option>
-            <option value="light">broken light</option>
+            <option value="pothole">Pothole</option>
+            <option value="light">Broken Light</option>
             <option value="other">Other</option>
             </select>
 
@@ -60,8 +60,8 @@ function SubmitReport( { reports, setReports}) {
                 />
             )}
 
-            <button type='submit'>submit</button>
-            <p> thanks for taking the time to get it noticed!</p>
+            <button type='submit'>Submit</button>
+            <p> Thanks for keeping OSU safe!</p>
         </form>
     );
 }
